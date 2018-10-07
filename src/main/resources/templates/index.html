@@ -21,7 +21,10 @@
             <tr th:each="task : ${taskList}">
                 <td th:text="${task.id}">id</td>
                 <td th:text="${task.title}">id</td>
-                <td><a th:href="@{/task/{id}(id=${task.id})}">Editar</a></td>
+                <td>
+                    <a th:href="@{/task/{id}(id=${task.id})}">Edit</a>
+                    <a th:href="@{/task/show/{id}(id=${task.id})}">Show</a>
+                </td>
             </tr>
         </tbody>
     </table>

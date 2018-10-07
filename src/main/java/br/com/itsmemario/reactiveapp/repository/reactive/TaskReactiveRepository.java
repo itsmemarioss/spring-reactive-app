@@ -1,5 +1,9 @@
 package br.com.itsmemario.reactiveapp.repository.reactive;
 
 
-public interface TaskReactiveRepository {
+import br.com.itsmemario.reactiveapp.model.Task;
+import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
+
+public interface TaskReactiveRepository extends ReactiveMongoRepository<Task, String> {
+
 }

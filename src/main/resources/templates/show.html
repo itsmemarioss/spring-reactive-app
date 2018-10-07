@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Task Form</title>
+</head>
+<body>
+    <section id="task-section" th:object="${task}">
+        <h1 th:text="*{title}"></h1>
+        <div id="description" th:text="*{description}"></div>
+    </section>
+
+</body>
+</html>
